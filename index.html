@@ -4,7 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Manojoshigeorge J | Data Analyst</title>
+
+  <!-- FONT -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -12,6 +17,7 @@
 
   <style>
     body {
+      font-family: 'Inter', sans-serif;
       background: url('./Portfolio.jpg') no-repeat center center fixed;
       background-size: cover;
     }
@@ -22,321 +28,259 @@
     }
 
     section {
-      padding: 100px 10%;
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
     }
 
     .glass {
       backdrop-filter: blur(14px);
       border: 1px solid rgba(255,255,255,0.1);
       background: rgba(255,255,255,0.05);
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
 
     .glass:hover {
-      transform: translateY(-5px) scale(1.02);
-      box-shadow: 0 0 25px rgba(34,211,238,0.3);
+      transform: translateY(-6px);
+      box-shadow: 0 0 30px rgba(34,211,238,0.25);
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
     }
   </style>
 
 </head>
 
 <body>
-<div class="overlay text-white font-sans">
+<div class="overlay text-white">
 
 <!-- HERO -->
 
-<section class="grid md:grid-cols-2 items-center gap-10 max-w-6xl mx-auto" data-aos="fade-up">
-
-  <div>
-    <h2 class="text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
-      Hi, I'm Manojoshigeorge 👋
-    </h2>
+<section data-aos="fade-up">
+  <div class="container grid md:grid-cols-2 gap-12 items-center">
 
 ```
-<h3 class="text-2xl text-cyan-400 mb-4">
-  <span id="typing"></span>
-</h3>
+<div class="space-y-6">
+  <h1 class="text-5xl bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
+    Hi, I'm Manojoshigeorge 👋
+  </h1>
 
-<p class="text-gray-300 text-lg leading-relaxed">
-  A Web Research Analyst transitioning into Data Analytics with hands-on experience in Python, SQL, Excel, and Power BI. I specialize in turning raw data into meaningful insights for business growth.
-</p>
+  <h2 class="text-2xl text-cyan-400">
+    <span id="typing"></span>
+  </h2>
 
-<p class="text-cyan-400 mt-3">
-  Available for Freelance Projects 🚀
-</p>
+  <p class="text-gray-300 text-lg leading-relaxed">
+    Web Research Analyst transitioning into Data Analytics. Skilled in Python, SQL, Excel, and Power BI, focused on transforming data into business insights.
+  </p>
 
-<div class="mt-6 flex gap-4 flex-wrap">
-  <a href="#projects" class="bg-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-600">
-    🚀 Projects
-  </a>
+  <p class="text-cyan-400">Available for Freelance Projects 🚀</p>
 
-  <a href="./resume.pdf" download
-  class="bg-green-500 px-6 py-3 rounded-xl hover:scale-110 hover:bg-green-600 transition">
-    📥 Resume
-  </a>
+  <div class="flex gap-4 flex-wrap">
+    <a href="#projects" class="bg-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-600 transition">
+      Projects
+    </a>
+    <a href="./resume.pdf" download class="bg-green-500 px-6 py-3 rounded-xl hover:bg-green-600">
+      Resume
+    </a>
+  </div>
+</div>
+
+<div class="flex justify-center items-center">
+  <img src="profile.jpg" class="w-80 h-80 object-contain rounded-full border-4 border-cyan-400 bg-white p-2">
 </div>
 ```
 
   </div>
-
-  <div class="flex justify-center">
-    <img src="profile.jpg"
-    class="w-80 h-80 object-contain rounded-full border-4 border-cyan-400 bg-white p-2">
-  </div>
-
 </section>
 
-<hr class="border-gray-700 my-10">
+<hr class="border-gray-700">
 
 <!-- ABOUT -->
 
-<section class="glass rounded-xl" data-aos="fade-up">
-
-  <h2 class="text-4xl font-bold mb-10 text-center">About Me</h2>
-
-  <div class="max-w-4xl mx-auto text-gray-300 text-lg leading-loose text-justify space-y-5">
+<section class="glass">
+  <div class="container text-center">
 
 ```
-<p>
-  I am currently working as a Web Research Analyst, where I collect, verify, and structure large volumes of data from various online sources. My role involves ensuring data accuracy and organizing datasets for business use.
-</p>
+<h2 class="text-4xl mb-8">About Me</h2>
 
-<p>
-  I developed a strong interest in Data Analytics and trained in Python, SQL, Excel, and Power BI. I enjoy analyzing data, identifying trends, and building dashboards that provide meaningful insights.
-</p>
+<div class="max-w-3xl mx-auto text-gray-300 text-lg leading-loose space-y-6 text-justify">
 
-<p>
-  My goal is to become a professional Data Analyst and contribute to data-driven decision-making in organizations.
-</p>
+  <p>
+    I work as a Web Research Analyst, collecting and structuring data from multiple online sources while ensuring accuracy and consistency.
+  </p>
+
+  <p>
+    My interest in Data Analytics led me to gain skills in Python, SQL, Excel, and Power BI. I focus on solving problems using data and building meaningful dashboards.
+  </p>
+
+  <p>
+    I aim to become a Data Analyst who delivers impactful insights for business growth.
+  </p>
+
+</div>
 ```
 
   </div>
-
 </section>
 
-<hr class="border-gray-700 my-10">
-
-
+<hr class="border-gray-700">
 
 <!-- SKILLS -->
 
-<section data-aos="fade-up">
-
-  <h2 class="text-4xl font-bold text-center mb-12">Skills</h2>
-
-  <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<section>
+  <div class="container">
 
 ```
-<div class="glass p-6 rounded-xl">
-  <h3 class="text-xl font-semibold text-cyan-400">Python</h3>
-  <p class="text-gray-400 mt-2">
-    Used for data cleaning, data manipulation, and basic analysis using libraries like Pandas and NumPy.
-  </p>
-</div>
+<h2 class="text-4xl text-center mb-4">Skills</h2>
 
-<div class="glass p-6 rounded-xl">
-  <h3 class="text-xl font-semibold text-cyan-400">SQL</h3>
-  <p class="text-gray-400 mt-2">
-    Writing queries, joins, and aggregations to extract insights from structured databases.
-  </p>
-</div>
+<p class="text-center text-gray-400 mb-10 max-w-2xl mx-auto">
+  Tools and technologies I use to analyze and transform data into insights
+</p>
 
-<div class="glass p-6 rounded-xl">
-  <h3 class="text-xl font-semibold text-cyan-400">Power BI</h3>
-  <p class="text-gray-400 mt-2">
-    Building interactive dashboards and reports to visualize business performance and trends.
-  </p>
-</div>
+<div class="grid md:grid-cols-2 gap-10">
 
-<div class="glass p-6 rounded-xl">
-  <h3 class="text-xl font-semibold text-cyan-400">Excel</h3>
-  <p class="text-gray-400 mt-2">
-    Data cleaning, pivot tables, charts, and advanced formulas for analysis and reporting.
-  </p>
-</div>
-
-<div class="glass p-6 rounded-xl">
-  <h3 class="text-xl font-semibold text-cyan-400">Data Cleaning</h3>
-  <p class="text-gray-400 mt-2">
-    Handling missing values, duplicates, and transforming raw data into structured formats.
-  </p>
-</div>
-
-<div class="glass p-6 rounded-xl">
-  <h3 class="text-xl font-semibold text-cyan-400">Data Visualization</h3>
-  <p class="text-gray-400 mt-2">
-    Presenting insights using charts, dashboards, and visuals for better understanding.
-  </p>
-</div>
-```
-
-
+  <div class="glass p-6 rounded-xl text-center md:text-left">
+    <h3 class="text-cyan-400">Python</h3>
+    <p class="text-gray-400 mt-2">Data cleaning, analysis using Pandas and NumPy.</p>
   </div>
 
+  <div class="glass p-6 rounded-xl text-center md:text-left">
+    <h3 class="text-cyan-400">SQL</h3>
+    <p class="text-gray-400 mt-2">Querying, joins, aggregations for insights.</p>
+  </div>
+
+  <div class="glass p-6 rounded-xl text-center md:text-left">
+    <h3 class="text-cyan-400">Power BI</h3>
+    <p class="text-gray-400 mt-2">Interactive dashboards and reporting.</p>
+  </div>
+
+  <div class="glass p-6 rounded-xl text-center md:text-left">
+    <h3 class="text-cyan-400">Excel</h3>
+    <p class="text-gray-400 mt-2">Pivot tables, formulas, reporting.</p>
+  </div>
+
+</div>
+```
+
+  </div>
 </section>
 
-<hr class="border-gray-700 my-10">
+<hr class="border-gray-700">
 
 <!-- SERVICES -->
 
-<section data-aos="fade-up">
-
-  <h2 class="text-4xl font-bold text-center mb-10">Services</h2>
-
-  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<section>
+  <div class="container">
 
 ```
-<div class="glass p-6 rounded-xl text-center">
-  <h3 class="text-xl font-semibold mb-3">📊 Data Analysis</h3>
-  <p class="text-gray-400">
-    Analyze datasets and extract insights using Excel, SQL, and Python.
-  </p>
-</div>
+<h2 class="text-4xl text-center mb-10">Services</h2>
 
-<div class="glass p-6 rounded-xl text-center">
-  <h3 class="text-xl font-semibold mb-3">📈 Dashboard Creation</h3>
-  <p class="text-gray-400">
-    Build Power BI dashboards to visualize business performance.
-  </p>
-</div>
+<div class="grid md:grid-cols-3 gap-10">
 
-<div class="glass p-6 rounded-xl text-center">
-  <h3 class="text-xl font-semibold mb-3">🧹 Data Cleaning</h3>
-  <p class="text-gray-400">
-    Clean and structure messy data into usable formats.
-  </p>
+  <div class="glass p-6 rounded-xl text-center">
+    <h3>📊 Data Analysis</h3>
+    <p class="text-gray-400 mt-2">Extract insights from raw data.</p>
+  </div>
+
+  <div class="glass p-6 rounded-xl text-center">
+    <h3>📈 Dashboard Creation</h3>
+    <p class="text-gray-400 mt-2">Build Power BI dashboards.</p>
+  </div>
+
+  <div class="glass p-6 rounded-xl text-center">
+    <h3>🧹 Data Cleaning</h3>
+    <p class="text-gray-400 mt-2">Transform messy data.</p>
+  </div>
+
 </div>
 ```
 
   </div>
-
 </section>
 
-<hr class="border-gray-700 my-10">
-
-<!-- EXPERIENCE -->
-
-<section data-aos="fade-up">
-
-  <h2 class="text-4xl font-bold mb-10 text-center">Experience</h2>
-
-  <div class="space-y-8 max-w-5xl mx-auto">
-
-```
-<div class="glass p-6 rounded-xl">
-  <h3 class="text-xl font-semibold">Web Research Analyst – Lesburn</h3>
-  <p class="text-gray-400 mt-3">
-    Collected and validated web data, transformed unstructured data into usable formats, and supported business insights.
-  </p>
-</div>
-
-<div class="glass p-6 rounded-xl">
-  <h3 class="text-xl font-semibold">Rehabilitation Trainee – Christian Fellowship Hospital</h3>
-  <p class="text-gray-400 mt-3">
-    Maintained records, handled documentation, and ensured accuracy in healthcare data management.
-  </p>
-</div>
-```
-
-  </div>
-
-</section>
-
-<hr class="border-gray-700 my-10">
+<hr class="border-gray-700">
 
 <!-- PROJECTS -->
 
-<section id="projects" data-aos="fade-up">
-
-  <h2 class="text-4xl font-bold mb-10 text-center">Projects</h2>
-
-  <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<section id="projects">
+  <div class="container">
 
 ```
-<div class="glass p-6 rounded-xl">
-  <h3 class="text-xl font-semibold">IT Salaries Analysis</h3>
-  <p class="text-gray-400 mt-3">
-    Analyzed IT salary data to identify trends and skill demand using Excel and SQL.
-  </p>
-  <a href="jobs-data-it.pdf" target="_blank" class="text-cyan-400">View →</a>
-</div>
+<h2 class="text-4xl text-center mb-10">Projects</h2>
 
-<div class="glass p-6 rounded-xl">
-  <h3 class="text-xl font-semibold">Sales Dashboard</h3>
-  <p class="text-gray-400 mt-3">
-    Built Power BI dashboard to track revenue, profit, and performance insights.
-  </p>
-  <a href="sales-dashboard.pdf" target="_blank" class="text-cyan-400">View →</a>
+<div class="grid md:grid-cols-2 gap-10">
+
+  <div class="glass p-6 rounded-xl h-full">
+    <h3>IT Salaries Analysis</h3>
+    <p class="text-gray-400 mt-2">Analyzed salary trends using Excel & SQL.</p>
+    <a href="jobs-data-it.pdf" class="text-cyan-400 mt-3 inline-block">View →</a>
+  </div>
+
+  <div class="glass p-6 rounded-xl h-full">
+    <h3>Sales Dashboard</h3>
+    <p class="text-gray-400 mt-2">Power BI dashboard for performance tracking.</p>
+    <a href="sales-dashboard.pdf" class="text-cyan-400 mt-3 inline-block">View →</a>
+  </div>
+
 </div>
 ```
 
   </div>
-
 </section>
 
-<hr class="border-gray-700 my-10">
+<hr class="border-gray-700">
 
 <!-- CERTIFICATIONS -->
 
-<section class="glass rounded-xl" data-aos="fade-up">
-
-  <h2 class="text-4xl font-bold mb-10 text-center">Certifications</h2>
-
-  <div class="space-y-6 max-w-4xl mx-auto">
+<section class="glass">
+  <div class="container">
 
 ```
-<div>
-  <h3 class="text-xl font-semibold text-cyan-400">Data Analytics – Entri Elevate</h3>
-  <p class="text-gray-400 mt-2">
-    Completed training in Python, SQL, Excel, and Power BI with real-world projects.
-  </p>
-</div>
+<h2 class="text-4xl text-center mb-10">Certifications</h2>
 
-<div>
-  <h3 class="text-xl font-semibold text-cyan-400">Data Analytics – University of Illinois (USA)</h3>
-  <p class="text-gray-400 mt-2">
-    Learned core data analytics concepts, statistics, and real-world applications.
-  </p>
-</div>
+<div class="space-y-6 max-w-3xl mx-auto">
 
-<div>
-  <h3 class="text-xl font-semibold text-cyan-400">Tata GenAI Powered Data Analytics</h3>
-  <p class="text-gray-400 mt-2">
-    Gained knowledge of AI-powered analytics and automation techniques.
-  </p>
+  <div>
+    <h3 class="text-cyan-400">Data Analytics – Entri Elevate</h3>
+    <p class="text-gray-400 mt-2">Training in Python, SQL, Excel, Power BI.</p>
+  </div>
+
+  <div>
+    <h3 class="text-cyan-400">University of Illinois (USA)</h3>
+    <p class="text-gray-400 mt-2">Data Analytics fundamentals.</p>
+  </div>
+
+  <div>
+    <h3 class="text-cyan-400">Tata GenAI Analytics</h3>
+    <p class="text-gray-400 mt-2">AI-powered analytics concepts.</p>
+  </div>
+
 </div>
 ```
 
   </div>
-
 </section>
 
-<hr class="border-gray-700 my-10">
+<hr class="border-gray-700">
 
 <!-- CTA -->
 
 <section class="text-center">
-
-  <h2 class="text-3xl font-bold mb-4">Let's Work Together 🚀</h2>
-
-  <p class="text-gray-400 mb-6">
-    Available for freelance Data Analyst projects
-  </p>
-
-<a href="mailto:joshigeorge2101@gmail.com"
-class="bg-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-600">
-Hire Me </a>
-
+  <h2 class="text-3xl mb-4">Let's Work Together 🚀</h2>
+  <p class="text-gray-400 mb-6">Available for freelance work</p>
+  <a href="mailto:joshigeorge2101@gmail.com" class="bg-cyan-500 px-6 py-3 rounded-xl">Hire Me</a>
 </section>
 
 <!-- CONTACT -->
 
-<section class="text-center mt-10">
-
-  <h2 class="text-3xl font-bold mb-3">Contact</h2>
+<section class="text-center">
+  <h2 class="text-3xl mb-3">Contact</h2>
   <p>📞 7845513563</p>
   <p>📧 joshigeorge2101@gmail.com</p>
-
 </section>
 
 <footer class="text-center py-6 text-gray-400">
@@ -354,43 +298,22 @@ class="fixed bottom-6 right-6 bg-green-500 px-4 py-3 rounded-full shadow-lg">
 <!-- TYPING -->
 
 <script>
-const textArray = [
-  "Web Research Analyst",
-  " Data Analyst",
-  "Power BI Developer",
-  "Turning Data into Insights 📊"
-];
+const textArray = ["Web Research Analyst","Data Analyst","Power BI Developer"];
+let i=0,j=0,del=false;
 
-let index = 0, charIndex = 0, isDeleting = false;
-
-function type() {
-  let current = textArray[index];
-
-  document.getElementById("typing").innerHTML =
-    isDeleting ? current.substring(0, charIndex--) : current.substring(0, charIndex++);
-
-  if (!isDeleting && charIndex === current.length) {
-    isDeleting = true;
-    setTimeout(type, 1000);
-    return;
-  }
-
-  if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    index = (index + 1) % textArray.length;
-  }
-
-  setTimeout(type, isDeleting ? 50 : 100);
+function type(){
+let t=textArray[i];
+document.getElementById("typing").innerHTML=del?t.substring(0,j--):t.substring(0,j++);
+if(!del&&j==t.length){del=true;setTimeout(type,1000);return;}
+if(del&&j==0){del=false;i=(i+1)%textArray.length;}
+setTimeout(type,del?50:100);
 }
-
 type();
 </script>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-<script>
-AOS.init({ duration: 1200 });
-</script>
+<script>AOS.init({duration:1200});</script>
 
 </body>
 </html>
