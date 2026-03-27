@@ -28,11 +28,13 @@
     .glass {
       backdrop-filter: blur(14px);
       border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.05);
       transition: 0.3s;
     }
 
     .glass:hover {
-      transform: scale(1.03);
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 0 25px rgba(34,211,238,0.3);
     }
   </style>
 
@@ -41,25 +43,29 @@
 <body>
 <div class="overlay text-white font-sans">
 
-<!-- HERO (FIXED ALIGNMENT) -->
+<!-- HERO -->
 
-<section class="grid md:grid-cols-2 items-center gap-10" data-aos="fade-up">
+<section class="grid md:grid-cols-2 items-center gap-10 max-w-6xl mx-auto" data-aos="fade-up">
 
   <div>
-    <h2 class="text-5xl font-bold mb-4">
+    <h2 class="text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
       Hi, I'm Manojoshigeorge 👋
     </h2>
 
 ```
-<h3 class="text-2xl text-cyan-400 mb-6">
+<h3 class="text-2xl text-cyan-400 mb-4">
   <span id="typing"></span>
 </h3>
 
 <p class="text-gray-300 text-lg leading-relaxed">
-  A passionate Web Research Analyst transitioning into a Data Analyst role, skilled in Python, SQL, Excel, and Power BI. I transform raw data into meaningful insights that drive business decisions.
+  A Web Research Analyst transitioning into Data Analytics with hands-on experience in Python, SQL, Excel, and Power BI. I specialize in turning raw data into meaningful insights for business growth.
 </p>
 
-<div class="mt-8 flex gap-4 flex-wrap">
+<p class="text-cyan-400 mt-3">
+  Available for Freelance Projects 🚀
+</p>
+
+<div class="mt-6 flex gap-4 flex-wrap">
   <a href="#projects" class="bg-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-600">
     🚀 Projects
   </a>
@@ -73,40 +79,102 @@
 
   </div>
 
-  <!-- RIGHT SIDE IMAGE -->
-
   <div class="flex justify-center">
     <img src="profile.jpg"
-    class="w-72 h-72 object-contain rounded-full border-4 border-cyan-400 bg-white p-2">
+    class="w-80 h-80 object-contain rounded-full border-4 border-cyan-400 bg-white p-2">
   </div>
 
 </section>
 
-<!-- ABOUT (ALIGN FIX) -->
+<hr class="border-gray-700 my-10">
+
+<!-- ABOUT -->
 
 <section class="glass rounded-xl" data-aos="fade-up">
 
   <h2 class="text-4xl font-bold mb-10 text-center">About Me</h2>
 
-  <div class="max-w-4xl mx-auto text-gray-300 text-lg leading-loose text-justify">
+  <div class="max-w-4xl mx-auto text-gray-300 text-lg leading-loose text-justify space-y-5">
 
 ```
 <p>
-  I am currently working as a Web Research Analyst, where I collect, verify, and structure large volumes of data from various online sources. My role involves ensuring data accuracy, organizing datasets, and supporting business decisions through reliable information.
+  I am currently working as a Web Research Analyst, where I collect, verify, and structure large volumes of data from various online sources. My role involves ensuring data accuracy and organizing datasets for business use.
 </p>
 
-<p class="mt-5">
-  Through this experience, I developed a strong interest in Data Analytics. I have trained in tools such as Python, SQL, Excel, and Power BI, enabling me to clean, analyze, and visualize data effectively.
+<p>
+  I developed a strong interest in Data Analytics and trained in Python, SQL, Excel, and Power BI. I enjoy analyzing data, identifying trends, and building dashboards that provide meaningful insights.
 </p>
 
-<p class="mt-5">
-  I enjoy identifying trends, solving problems using data, and building dashboards that provide clear and meaningful insights. My goal is to grow into a professional Data Analyst and contribute to data-driven business environments.
+<p>
+  My goal is to become a professional Data Analyst and contribute to data-driven decision-making in organizations.
 </p>
 ```
 
   </div>
 
 </section>
+
+<hr class="border-gray-700 my-10">
+
+<!-- SKILLS -->
+
+<section data-aos="fade-up">
+
+  <h2 class="text-4xl font-bold text-center mb-10">Skills</h2>
+
+  <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+
+```
+<span class="bg-cyan-500/20 px-4 py-2 rounded-full">Python</span>
+<span class="bg-cyan-500/20 px-4 py-2 rounded-full">SQL</span>
+<span class="bg-cyan-500/20 px-4 py-2 rounded-full">Power BI</span>
+<span class="bg-cyan-500/20 px-4 py-2 rounded-full">Excel</span>
+<span class="bg-cyan-500/20 px-4 py-2 rounded-full">Data Cleaning</span>
+<span class="bg-cyan-500/20 px-4 py-2 rounded-full">Data Visualization</span>
+```
+
+  </div>
+
+</section>
+
+<hr class="border-gray-700 my-10">
+
+<!-- SERVICES -->
+
+<section data-aos="fade-up">
+
+  <h2 class="text-4xl font-bold text-center mb-10">Services</h2>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+```
+<div class="glass p-6 rounded-xl text-center">
+  <h3 class="text-xl font-semibold mb-3">📊 Data Analysis</h3>
+  <p class="text-gray-400">
+    Analyze datasets and extract insights using Excel, SQL, and Python.
+  </p>
+</div>
+
+<div class="glass p-6 rounded-xl text-center">
+  <h3 class="text-xl font-semibold mb-3">📈 Dashboard Creation</h3>
+  <p class="text-gray-400">
+    Build Power BI dashboards to visualize business performance.
+  </p>
+</div>
+
+<div class="glass p-6 rounded-xl text-center">
+  <h3 class="text-xl font-semibold mb-3">🧹 Data Cleaning</h3>
+  <p class="text-gray-400">
+    Clean and structure messy data into usable formats.
+  </p>
+</div>
+```
+
+  </div>
+
+</section>
+
+<hr class="border-gray-700 my-10">
 
 <!-- EXPERIENCE -->
 
@@ -120,14 +188,14 @@
 <div class="glass p-6 rounded-xl">
   <h3 class="text-xl font-semibold">Web Research Analyst – Lesburn</h3>
   <p class="text-gray-400 mt-3">
-    Responsible for collecting, validating, and analyzing web-based data. Worked with large datasets and converted unstructured information into meaningful formats for business use.
+    Collected and validated web data, transformed unstructured data into usable formats, and supported business insights.
   </p>
 </div>
 
 <div class="glass p-6 rounded-xl">
   <h3 class="text-xl font-semibold">Rehabilitation Trainee – Christian Fellowship Hospital</h3>
   <p class="text-gray-400 mt-3">
-    Maintained patient records, prepared reports, and ensured accurate documentation. Developed discipline, teamwork, and responsibility.
+    Maintained records, handled documentation, and ensured accuracy in healthcare data management.
   </p>
 </div>
 ```
@@ -135,6 +203,8 @@
   </div>
 
 </section>
+
+<hr class="border-gray-700 my-10">
 
 <!-- PROJECTS -->
 
@@ -148,7 +218,7 @@
 <div class="glass p-6 rounded-xl">
   <h3 class="text-xl font-semibold">IT Salaries Analysis</h3>
   <p class="text-gray-400 mt-3">
-    Analyzed IT salary data to identify trends, high-paying roles, and skill demand using Excel and SQL.
+    Analyzed IT salary data to identify trends and skill demand using Excel and SQL.
   </p>
   <a href="jobs-data-it.pdf" target="_blank" class="text-cyan-400">View →</a>
 </div>
@@ -166,33 +236,35 @@
 
 </section>
 
-<!-- CERTIFICATIONS (TEXT FORMAT) -->
+<hr class="border-gray-700 my-10">
+
+<!-- CERTIFICATIONS -->
 
 <section class="glass rounded-xl" data-aos="fade-up">
 
   <h2 class="text-4xl font-bold mb-10 text-center">Certifications</h2>
 
-  <div class="space-y-6 max-w-4xl mx-auto text-left">
+  <div class="space-y-6 max-w-4xl mx-auto">
 
 ```
 <div>
   <h3 class="text-xl font-semibold text-cyan-400">Data Analytics – Entri Elevate</h3>
   <p class="text-gray-400 mt-2">
-    Completed comprehensive training in Data Analytics covering Python, SQL, Excel, and Power BI. Gained hands-on experience in data cleaning, analysis, and dashboard creation focused on real-world business use cases.
+    Completed training in Python, SQL, Excel, and Power BI with real-world projects.
   </p>
 </div>
 
 <div>
   <h3 class="text-xl font-semibold text-cyan-400">Data Analytics – University of Illinois (USA)</h3>
   <p class="text-gray-400 mt-2">
-    Earned certification in Data Analytics from the University of Illinois, focusing on data analysis techniques, statistical concepts, and practical applications in real-world datasets.
+    Learned core data analytics concepts, statistics, and real-world applications.
   </p>
 </div>
 
 <div>
   <h3 class="text-xl font-semibold text-cyan-400">Tata GenAI Powered Data Analytics</h3>
   <p class="text-gray-400 mt-2">
-    Completed a program focused on Generative AI applications in Data Analytics, learning how modern AI tools can enhance data analysis, automation, and decision-making processes.
+    Gained knowledge of AI-powered analytics and automation techniques.
   </p>
 </div>
 ```
@@ -201,22 +273,32 @@
 
 </section>
 
-<!-- EDUCATION -->
+<hr class="border-gray-700 my-10">
 
-<section class="text-center" data-aos="fade-up">
-  <h2 class="text-3xl font-bold mb-3">Education</h2>
-  <p class="text-gray-300">
-    Rev. Jacob Memorial Christian College <br>
-    (Madurai Kamaraj University)
+<!-- CTA -->
+
+<section class="text-center">
+
+  <h2 class="text-3xl font-bold mb-4">Let's Work Together 🚀</h2>
+
+  <p class="text-gray-400 mb-6">
+    Available for freelance Data Analyst projects
   </p>
+
+<a href="mailto:joshigeorge2101@gmail.com"
+class="bg-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-600">
+Hire Me </a>
+
 </section>
 
 <!-- CONTACT -->
 
-<section class="text-center" data-aos="fade-up">
+<section class="text-center mt-10">
+
   <h2 class="text-3xl font-bold mb-3">Contact</h2>
   <p>📞 7845513563</p>
   <p>📧 joshigeorge2101@gmail.com</p>
+
 </section>
 
 <footer class="text-center py-6 text-gray-400">
@@ -224,6 +306,12 @@
 </footer>
 
 </div>
+
+<!-- WHATSAPP -->
+
+<a href="https://wa.me/917845513563" target="_blank"
+class="fixed bottom-6 right-6 bg-green-500 px-4 py-3 rounded-full shadow-lg">
+💬 </a>
 
 <!-- TYPING -->
 
@@ -235,18 +323,13 @@ const textArray = [
   "Turning Data into Insights 📊"
 ];
 
-let index = 0;
-let charIndex = 0;
-let isDeleting = false;
+let index = 0, charIndex = 0, isDeleting = false;
 
 function type() {
   let current = textArray[index];
 
-  if (isDeleting) {
-    document.getElementById("typing").innerHTML = current.substring(0, charIndex--);
-  } else {
-    document.getElementById("typing").innerHTML = current.substring(0, charIndex++);
-  }
+  document.getElementById("typing").innerHTML =
+    isDeleting ? current.substring(0, charIndex--) : current.substring(0, charIndex++);
 
   if (!isDeleting && charIndex === current.length) {
     isDeleting = true;
